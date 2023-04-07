@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: linear-gradient(90deg, #00afb9, #fed9b7);
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10%;
+}
+.card {
+	width: 500px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: #011522;
+	border-radius: 8px;
+	z-index: 1;
+}
+
+.tools {
+	display: flex;
+	align-items: center;
+	padding: 9px;
+}
+
+.circle {
+	padding: 0 4px;
+}
+
+.box {
+	display: inline-block;
+	align-items: center;
+	width: 10px;
+	height: 10px;
+	padding: 1px;
+	border-radius: 50%;
+}
+
+.red {
+	background-color: #ff605c;
+}
+
+.yellow {
+	background-color: #ffbd44;
+}
+
+.green {
+	background-color: #00ca4e;
+}
+
+/* Content Styling */
+ul {
+	display: inline-block;
+	align-items: center;
+	justify-content: center;
+}
+
+li {
+	border-radius: 10px;
+	margin-top: 20px;
+	width: 400px;
+	background-color: #e8e8e8;
+	color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	text-indent: 5px;
+}
+
+li button {
+	align-self: flex-end;
+	color: #fff;
+	margin-left: 10px;
+	padding: 10px;
+	background-color: #011522;
+}
+
+li button:hover {
+	background-color: #e8e8e8;
+	color: #000;
+	transition: all 0.3s;
+}
+
+form {
+	justify-content: space-evenly;
+	display: flex;
+	align-items: center;
+}
+
+input {
+	height: 35px;
+	width: 300px;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 50px;
+	border: none;
+	outline: none;
+	background-color: #e8e8e8;
+}
+
+input:focus {
+	outline: none;
+	border-radius: none;
+}
+
+.card__content {
+	text-align: center;
+	color: #fff;
+}
+
+.task-form {
+	margin-top: 20px;
+}
+
+.list-container {
+	margin-top: 40px;
+}
+
+.list-container h2 {
+	font-size: 20px;
+}
+button {
+	/* Variables */
+	--button_radius: 0.75em;
+	--button_color: #e8e8e8;
+	--button_outline_color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	border: none;
+	border-radius: var(--button_radius);
+	background: var(--button_outline_color);
+	cursor: pointer;
+}
+
+.button_top {
+	display: block;
+	box-sizing: border-box;
+	border: 2px solid var(--button_outline_color);
+	border-radius: var(--button_radius);
+	padding: 5px 20px;
+	background: var(--button_color);
+	color: var(--button_outline_color);
+	transform: translateY(-0.2em);
+	transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+	/* Pull the button upwards when hovered */
+	transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+	/* Push the button downwards when pressed */
+	transform: translateY(0);
+}
